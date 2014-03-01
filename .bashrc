@@ -110,3 +110,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+unset GNOME_KEYRING_CONTROL  # avoid pkcs11 error message on XFCE
