@@ -1,0 +1,26 @@
+set locale=`echo "${LC_ALL:-${LC_TIME:-${LANG}}}"`
+set date_format="%A %e %B %Y à %k:%M %Z"
+set attribution="\n\nLe %d, %n a écrit :"
+
+set from='Romain Vimont | ®om <rom@rom1v.com>'
+set folder=imap://imap.rom1v.com
+set spoolfile=+INBOX
+set postponed=+Drafts
+set record=+Sent
+
+source .muttrc_private
+#set imap_user=***USER***
+#set imap_pass=***PASSWORD***
+#set smtp_url=smtp://***USER***@smtp.rom1v.com
+#set smtp_pass=***PASSWORD***
+
+set ssl_starttls=yes
+set ssl_force_tls=yes
+
+set send_charset=us-ascii:utf-8
+set sort=reverse-date
+set pager_stop=yes
+set header_cache=~/.hcache
+set tmpdir=~/.mutttmp
+
+alias me "Romain Vimont | ®om" <rom@rom1v.com>

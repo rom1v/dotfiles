@@ -1,0 +1,5 @@
+# copy to .muttrc_private and edit
+set imap_user=***USER***
+set imap_pass=***PASSWORD***
+set smtp_url=smtp://***USER***@smtp.rom1v.com
+set smtp_pass=***PASSWORD***
