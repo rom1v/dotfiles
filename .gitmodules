@@ -1,0 +1,3 @@
+[submodule "gitbashprompt"]
+	path = gitbashprompt
+	url = http://git.rom1v.com/gitbashprompt.git
