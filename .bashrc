@@ -112,3 +112,9 @@ if ! shopt -oq posix; then
 fi
 
 unset GNOME_KEYRING_CONTROL  # avoid pkcs11 error message on XFCE
+
+PATH="$PATH:~/Documents/bin"
+PATH="$PATH:~/android/sdk/tools"
+PATH="$PATH:~/android/sdk/platform-tools"
+PATH="$PATH:~/android/ndk"
+PATH="$PATH:~/android/ndk/build"
