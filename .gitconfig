@@ -1,0 +1,12 @@
+[user]
+	name = Romain Vimont (®om)
+	email = rom@rom1v.com
+[color]
+	ui = true
+[merge]
+	conflictstyle = diff3
+[alias]
+	lg = log --oneline --graph --decorate --date-order
+	diffc = diff --cached
+	diffh = diff HEAD
+	rma = !git ls-files -z --deleted | xargs -0 git rm
