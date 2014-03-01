@@ -20,6 +20,7 @@ vim:
 mutt:
 	mv -f ~/.muttrc ~/.muttrc.bak || :
 	ln -sf $(PWD)/.muttrc ~/
+	mkdir -p ~/.mutttmp
 
 tmux:
 	mv -f ~/.tmux.conf ~/.tmux.conf.bak || :
