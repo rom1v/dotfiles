@@ -4,7 +4,9 @@ all: bash vim git mutt tmux
 
 bash: gitbashprompt
 	mv -f ~/.bashrc ~/.bashrc.bak || :
+	mv -f ~/.bash_aliases ~/.bash_aliases.bak || :
 	ln -sf $(PWD)/.bashrc ~/
+	ln -sf $(PWD)/.bash_aliases ~/
 
 gitbashprompt:
 	ln -sf $(PWD)/gitbashprompt/gitbashprompt ~/
