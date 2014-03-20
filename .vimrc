@@ -8,7 +8,7 @@ set expandtab
 set colorcolumn=80 "set cc=80
 highlight ColorColumn ctermbg=52 "darkred
 
-set listchars=trail:~,nbsp:_
+set listchars=tab:→\ ,trail:~,nbsp:_
 set list
 
 "au[tocmd]
