@@ -22,6 +22,7 @@ vim:
 mutt:
 	mv -f ~/.muttrc ~/.muttrc.bak || :
 	ln -sf $(PWD)/.muttrc ~/
+	ln -sf $(PWD)/.muttrc_private ~/
 	mkdir -p ~/.mutttmp
 
 tmux:
