@@ -1,3 +1,4 @@
+set t_Co=256
 syn on
 set number
 set background=dark
@@ -6,7 +7,7 @@ set shiftwidth=2
 set expandtab
 "set autoindent
 set colorcolumn=80 "set cc=80
-highlight ColorColumn ctermbg=52 "darkred
+highlight ColorColumn ctermbg=darkred "52
 
 set listchars=tab:→\ ,trail:~,nbsp:_
 set list
