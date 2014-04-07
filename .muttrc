@@ -8,7 +8,7 @@ set spoolfile=+INBOX
 set postponed=+Drafts
 set record=+Sent
 
-source .muttrc_private
+source ~/.muttrc_private
 #set imap_user=***USER***
 #set imap_pass=***PASSWORD***
 #set smtp_url=smtp://***USER***@smtp.rom1v.com
