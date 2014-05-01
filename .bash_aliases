@@ -8,7 +8,7 @@ alias u='sudo apt-get update && sudo apt-get upgrade'
 alias httpserv='python -m SimpleHTTPServer 4242'
 alias pj='python -mjson.tool'
 alias t='adb shell input text'
-alias v='git revlist HEAD -1'
+alias v='git rev-list HEAD -1'
 
 # find and open a file in vi
 fvi() {
