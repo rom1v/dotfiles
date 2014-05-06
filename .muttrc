@@ -2,7 +2,7 @@ set locale=`echo "${LC_ALL:-${LC_TIME:-${LANG}}}"`
 set date_format="%A %e %B %Y à %k:%M %Z"
 set attribution="\n\nLe %d, %n a écrit :"
 
-set from='Romain Vimont | ®om <rom@rom1v.com>'
+set from='Romain Vimont <rom@rom1v.com>'
 set folder=imap://imap.rom1v.com
 set spoolfile=+INBOX
 set postponed=+Drafts
