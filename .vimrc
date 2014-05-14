@@ -13,6 +13,7 @@ highlight ColorColumn ctermbg=234
 
 set listchars=tab:→\ ,trail:~,nbsp:_
 set list
+hi SpecialKey ctermfg=24
 
 "au[tocmd]
 "au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -nut\ -fca\ -br\ -npcs\ -ce\ -brf\ -npsl
