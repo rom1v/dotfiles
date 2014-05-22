@@ -20,6 +20,7 @@ vim:
 	ln -sf $(PWD)/.vimrc ~/
 	mkdir -p ~/.vim/plugin
 	ln -sf $(PWD)/vim_plugins/cscope_maps.vim ~/.vim/plugin/
+	ln -sf $(PWD)/vim-colorschemes/colors ~/.vim/colors
 
 mutt:
 	mv -f ~/.muttrc ~/.muttrc.bak || :

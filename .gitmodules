@@ -1,3 +1,6 @@
 [submodule "gitbashprompt"]
 	path = gitbashprompt
 	url = http://git.rom1v.com/gitbashprompt.git
+[submodule "vim-colorschemes"]
+	path = vim-colorschemes
+	url = https://github.com/dgvigil/vim-colorschemes.git
