@@ -9,6 +9,7 @@ alias httpserv='python -m SimpleHTTPServer 4242'
 alias pj='python -mjson.tool'
 alias t='adb shell input text'
 alias v='git rev-list HEAD -1'
+alias tmux='/usr/bin/tmux -2'
 
 # find and open a file in vi
 fvi() {
