@@ -22,5 +22,3 @@ set sort=reverse-date
 set pager_stop=yes
 set header_cache=~/.hcache
 set tmpdir=~/.mutttmp
-
-alias me "Romain Vimont | ®om" <rom@rom1v.com>
