@@ -2,9 +2,9 @@ set t_Co=256
 syn on
 set number
 "set background=dark
-set tabstop=8
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+"set softtabstop=2
+"set shiftwidth=2
 set expandtab
 "set autoindent
 color blazer
@@ -17,11 +17,15 @@ hi SpecialKey ctermfg=24
 
 "au[tocmd]
 "au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -nut\ -fca\ -br\ -npcs\ -ce\ -brf\ -npsl
-"au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -gnu -nut
-au BufNewFile,BufRead *.c,*.h set formatprg=indent
+"au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -gnu\ -nut
+au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -linux
 au BufNewFile,BufRead *.c,*.h set ai
 au BufNewFile,BufRead *.md set filetype=mkd tw=80
 au BufNewFile,BufRead *.mail,~/.mutttmp/mutt-* set tw=72
 au BufNewFile,BufRead COMMIT_EDITMSG set tw=72
 au FileType make set noet
 "au! Syntax mkd source $VIM/mkd.vim
+
+"if has("cscope") && filereadable("cscope.out")
+"  cscope add cscope.out
+"endif

@@ -72,7 +72,7 @@ esac
 #    ;;
 #esac
 
-. ~/gitbashprompt '38;5;226'
+. ~/gitbashprompt '38;5;118'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
