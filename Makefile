@@ -18,9 +18,8 @@ git:
 vim:
 	mv -f ~/.vimrc ~/.vimrc.bak || :
 	ln -sf $(PWD)/.vimrc ~/
-	mkdir -p ~/.vim/plugin
-	ln -sf $(PWD)/vim_plugins/cscope_maps.vim ~/.vim/plugin/
-	ln -sf $(PWD)/vim-colorschemes/colors ~/.vim/colors
+	mv -f ~/.vim ~/.vim.bak || :
+	ln -sf $(PWD)/.vim ~/
 
 mutt:
 	mv -f ~/.muttrc ~/.muttrc.bak || :
