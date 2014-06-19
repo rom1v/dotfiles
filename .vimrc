@@ -2,9 +2,9 @@ set t_Co=256
 syn on
 set number
 "set background=dark
-set tabstop=8
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+"set softtabstop=2
+set shiftwidth=4
 set expandtab
 "set autoindent
 color blazer
