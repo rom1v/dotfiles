@@ -9,7 +9,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 "set autoindent
-color blazer
+color jellybeans "desert256 blazer
 set colorcolumn=80 "set cc=80
 highlight ColorColumn ctermbg=234
 
