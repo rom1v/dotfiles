@@ -1,4 +1,5 @@
 alias o=xdg-open
+alias r='xdg-open mailto:"Romain Vimont <rom@rom1v.com>"'
 alias qr='qrencode -t ANSI'
 alias s='ssh -t serv "tmux -2 attach || tmux -2"'
 alias h='ssh -t ovh "tmux -2 attach || tmux -2"'
