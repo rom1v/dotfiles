@@ -18,7 +18,7 @@ set list
 hi SpecialKey ctermfg=24
 
 "GitGutter
-set updatetime=750
+"set updatetime=750
 highlight clear SignColumn
 
 "au[tocmd]
