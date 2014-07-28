@@ -17,6 +17,9 @@ set listchars=tab:→\ ,trail:~,nbsp:_
 set list
 hi SpecialKey ctermfg=24
 
+"on vim-gtk, share the clipboard with the environment
+set clipboard=unnamed
+
 "GitGutter
 "set updatetime=750
 highlight clear SignColumn
