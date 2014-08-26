@@ -15,7 +15,7 @@ highlight ColorColumn ctermbg=234
 
 set listchars=tab:→\ ,trail:~,nbsp:_
 set list
-hi SpecialKey ctermfg=24
+hi SpecialKey ctermfg=24 ctermbg=none
 
 "on vim-gtk, share the clipboard with the environment
 set clipboard=unnamed
