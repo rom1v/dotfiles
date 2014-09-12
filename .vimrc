@@ -25,10 +25,10 @@ set clipboard=unnamed
 highlight clear SignColumn
 
 "au[tocmd]
-"au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -nut\ -fca\ -br\ -npcs\ -ce\ -brf\ -npsl
-"au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -gnu\ -nut
-au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -linux
-au BufNewFile,BufRead *.c,*.h set ai
+au BufNewFile,BufRead *.c,*.h,*.cpp set formatprg=indent\ -linux\ -nut\ -fca\ -br\ -npcs\ -ce\ -brf\ -npsl\ -i4\ -sc
+"au BufNewFile,BufRead *.c,*.h,*.cpp set formatprg=indent\ -gnu\ -nut
+"au BufNewFile,BufRead *.c,*.h,*.cpp set formatprg=indent\ -linux
+au BufNewFile,BufRead *.c,*.h,*.cpp set ai
 au BufNewFile,BufRead *.md set filetype=mkd tw=80
 au BufNewFile,BufRead *.mail,~/.mutttmp/mutt-* set tw=72
 au BufNewFile,BufRead COMMIT_EDITMSG set tw=72
