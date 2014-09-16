@@ -11,3 +11,4 @@
 	diffh = diff HEAD
 	rma = !git ls-files -z --deleted | xargs -0 git rm
 	rv = log -p --reverse #review
+	rinit =!git init && git commit --allow-empty -m 'Initial empty commit'
