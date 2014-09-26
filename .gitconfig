@@ -4,7 +4,10 @@
 [color]
 	ui = true
 [merge]
+	tool = vimdiff
 	conflictstyle = diff3
+[mergetool]
+	prompt = false
 [alias]
 	lg = log --oneline --graph --decorate --date-order
 	diffc = diff --cached
