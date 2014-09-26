@@ -4,9 +4,14 @@
 [color]
 	ui = true
 [merge]
+	tool = vimdiff
 	conflictstyle = diff3
+[mergetool]
+	prompt = false
 [alias]
 	lg = log --oneline --graph --decorate --date-order
 	diffc = diff --cached
 	diffh = diff HEAD
 	rma = !git ls-files -z --deleted | xargs -0 git rm
+	rv = log -p --reverse #review
+	rinit =!git init && git commit --allow-empty -m 'Initial empty commit'
