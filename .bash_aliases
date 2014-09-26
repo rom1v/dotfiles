@@ -12,6 +12,8 @@ alias pj='python -mjson.tool'
 alias t='adb shell input text'
 alias v='git rev-list HEAD -1'
 alias tmux='/usr/bin/tmux -2'
+alias mtpsync='adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED -d file:///mnt/sdcard'
+
 alias vir='vi -R'
 alias linux='cd ~/linux-source-3.13'
 alias p='cd ~/Documents/projects'
