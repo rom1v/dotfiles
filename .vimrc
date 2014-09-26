@@ -25,12 +25,12 @@ set clipboard=unnamed
 highlight clear SignColumn
 
 "au[tocmd]
-"au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -nut\ -fca\ -br\ -npcs\ -ce\ -brf\ -npsl
-"au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -gnu -nut
-au BufNewFile,BufRead *.c,*.h set formatprg=indent
+au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -nut\ -fca\ -br\ -npcs\ -ce\ -brf\ -npsl
+"au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -gnu\ -nut
+"au BufNewFile,BufRead *.c,*.h set formatprg=indent\ -gnu\ -nut
 au BufNewFile,BufRead *.c,*.h set ai
 au BufNewFile,BufRead *.md set filetype=mkd tw=80
-au BufNewFile,BufRead *.mail,~/.mutttmp/mutt-* set tw=72
+au BufNewFile,BufRead *.mail,~/.mutttmp/mutt-* set tw=72 cc=72
 au BufNewFile,BufRead COMMIT_EDITMSG set tw=72
 au FileType make set noet
 "au! Syntax mkd source $VIM/mkd.vim
