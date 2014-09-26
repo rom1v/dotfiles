@@ -25,6 +25,8 @@ alias M='cd ../../'
 alias g='cd ~/Documents/genydeploy'
 alias d='watch -n1 adb devices'
 alias cp-sv4='cp ~/android/sdk/extras/android/support/v4/android-support-v4.jar .'
+alias b='ssh babypi'
+alias bb='cd ~/Documents/babyfoot/android/app/src/main'
 
 # find and open a file in vi
 fvi() {
