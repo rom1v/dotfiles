@@ -34,3 +34,6 @@ au BufNewFile,BufRead *.mail,~/.mutttmp/mutt-* set tw=72 cc=72
 au BufNewFile,BufRead COMMIT_EDITMSG set tw=72
 au FileType make set noet
 "au! Syntax mkd source $VIM/mkd.vim
+
+" map FSwitch (between .c/.cpp and .h) to \of
+nmap <silent> <Leader>of :FSHere<CR>
