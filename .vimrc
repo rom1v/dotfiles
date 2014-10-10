@@ -35,6 +35,5 @@ au BufNewFile,BufRead COMMIT_EDITMSG set tw=72
 au FileType make set noet
 "au! Syntax mkd source $VIM/mkd.vim
 
-"if has("cscope") && filereadable("cscope.out")
-"  cscope add cscope.out
-"endif
+" map FSwitch (between .c/.cpp and .h) to \of
+nmap <silent> <Leader>of :FSHere<CR>
