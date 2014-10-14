@@ -18,4 +18,4 @@
 	url = https://github.com/kien/ctrlp.vim.git
 [submodule ".vim/bundle/vim-fswitch"]
 	path = .vim/bundle/vim-fswitch
-	url = https://github.com/derekwyatt/vim-fswitch
+	url = https://github.com/derekwyatt/vim-fswitch.git
