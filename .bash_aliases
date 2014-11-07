@@ -14,6 +14,8 @@ alias tab='adb shell input keyevent 61'
 alias v='git rev-list HEAD -1'
 alias tmux='/usr/bin/tmux -2'
 alias mtpsync='adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED -d file:///mnt/sdcard'
+# update ssh-agent env variables
+alias fixagent='export SSH_AGENT_PID=$(pidof ssh-agent) && export SSH_AUTH_SOCK=$(find /tmp -path "/tmp/ssh-*/agent.$((SSH_AGENT_PID-1))")'
 
 # find and open a file in vi
 fvi() {
