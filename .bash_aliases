@@ -17,20 +17,6 @@ alias mtpsync='adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED -d 
 # update ssh-agent env variables
 alias fixagent='export SSH_AGENT_PID=$(pidof ssh-agent) && export SSH_AUTH_SOCK=$(find /tmp -path "/tmp/ssh-*/agent.$((SSH_AGENT_PID-1))")'
 
-alias vir='vi -R'
-alias linux='cd ~/linux-source-3.13'
-alias p='cd ~/Documents/projects'
-alias f='cd ~/Documents/FollowApps/'
-alias fs='cd ~/Documents/FollowApps/sdk_android_v2/'
-alias ft='cd ~/Documents/FollowApps/followapps-android-test-app/'
-alias m='cd src/main/'
-alias M='cd ../../'
-alias g='cd ~/Documents/genydeploy'
-alias d='watch -n1 adb devices'
-alias cp-sv4='cp ~/android/sdk/extras/android/support/v4/android-support-v4.jar .'
-alias b='ssh babypi'
-alias bb='cd ~/Documents/babyfoot/android/app/src/main'
-
 # find and open a file in vi
 fvi() {
   find -type f -name "$1" |
@@ -40,3 +26,5 @@ fvi() {
     fi
 }
 
+# bash aliases not to be shared by different hosts
+[[ -e .bash_aliases_custom ]] && . .bash_aliases_custom
