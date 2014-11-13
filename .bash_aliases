@@ -25,3 +25,6 @@ fvi() {
       vi "$r" < /dev/tty
     fi
 }
+
+# bash aliases not to be shared by different hosts
+[[ -e .bash_aliases_custom ]] && . .bash_aliases_custom
