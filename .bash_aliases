@@ -27,4 +27,4 @@ fvi() {
 }
 
 # bash aliases not to be shared by different hosts
-[[ -e .bash_aliases_custom ]] && . .bash_aliases_custom
+[[ -e ~/.bash_aliases_custom ]] && . ~/.bash_aliases_custom

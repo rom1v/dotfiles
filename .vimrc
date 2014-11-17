@@ -37,3 +37,4 @@ au FileType make set noet
 
 " map FSwitch (between .c/.cpp and .h) to \of
 nmap <silent> <Leader>of :FSHere<CR>
+map <silent> <F9> :NERDTree<CR>
