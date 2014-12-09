@@ -31,7 +31,7 @@ au BufNewFile,BufRead *.c,*.h,*.cpp set formatprg=indent\ -linux\ -nut\ -fca\ -b
 au BufNewFile,BufRead *.c,*.h,*.cpp set ai
 au BufNewFile,BufRead *.md set filetype=mkd tw=80
 au BufNewFile,BufRead *.mail,~/.mutttmp/mutt-* set tw=72 cc=72
-au BufNewFile,BufRead COMMIT_EDITMSG set tw=72
+au BufNewFile,BufRead COMMIT_EDITMSG set tw=72 cc=72
 au FileType make set noet
 "au! Syntax mkd source $VIM/mkd.vim
 
