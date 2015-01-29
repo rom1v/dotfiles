@@ -6,9 +6,11 @@ bash: gitbashprompt
 	mv -f ~/.bashrc ~/.bashrc.bak || :
 	mv -f ~/.bash_aliases ~/.bash_aliases.bak || :
 	mv -f ~/.bash_aliases_custom ~/.bash_aliases_custom.bak || :
+	mv -f ~/.profile ~/.profile.bak || :
 	ln -sf $(PWD)/.bashrc ~/
 	ln -sf $(PWD)/.bash_aliases ~/
-	ln -sf $(PWD)/.bash_aliases_custom
+	ln -sf $(PWD)/.bash_aliases_custom ~/
+	ln -sf $(PWD)/.profile ~/
 
 gitbashprompt:
 	ln -sf $(PWD)/gitbashprompt/gitbashprompt ~/

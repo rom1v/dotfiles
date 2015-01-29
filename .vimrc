@@ -9,9 +9,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 "set autoindent
-color jellybeans "desert256 blazer
+color bvemu "mustang xoria256 bvemu miko fu candyman kkruby jellybeans desert256 blazer busierbee
 set colorcolumn=80 "set cc=80
-highlight ColorColumn ctermbg=234
+highlight ColorColumn ctermbg=235 "234
 
 set listchars=tab:→\ ,trail:~,nbsp:_
 set list
@@ -31,7 +31,7 @@ au BufNewFile,BufRead *.c,*.h,*.cpp set formatprg=indent\ -linux\ -nut\ -fca\ -b
 au BufNewFile,BufRead *.c,*.h,*.cpp set ai
 au BufNewFile,BufRead *.md set filetype=mkd tw=80
 au BufNewFile,BufRead *.mail,~/.mutttmp/mutt-* set tw=72 cc=72
-au BufNewFile,BufRead COMMIT_EDITMSG set tw=72 cc=72
+au BufNewFile,BufRead COMMIT_EDITMSG,MERGE_MSG set tw=72 cc=72
 au FileType make set noet
 "au! Syntax mkd source $VIM/mkd.vim
 
