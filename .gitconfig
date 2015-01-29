@@ -9,7 +9,7 @@
 [mergetool]
 	prompt = false
 [alias]
-	lg = log --oneline --graph --decorate --date-order
+	lg = log --oneline --graph --decorate
 	diffc = diff --cached
 	diffh = diff HEAD
 	rma = !git ls-files -z --deleted | xargs -0 git rm
