@@ -8,7 +8,7 @@ bash: gitbashprompt
 	mv -f ~/.bash_aliases_custom ~/.bash_aliases_custom.bak || :
 	ln -sf $(PWD)/.bashrc ~/
 	ln -sf $(PWD)/.bash_aliases ~/
-	ln -sf $(PWD)/.bash_aliases_custom
+	ln -sf $(PWD)/.bash_aliases_custom ~/
 
 gitbashprompt:
 	ln -sf $(PWD)/gitbashprompt/gitbashprompt ~/
