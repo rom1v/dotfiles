@@ -122,3 +122,4 @@ PATH="/home/$USER/Qt5.3.2/5.3/gcc_64/bin:$PATH"
 PATH="/home/$USER/Qt5.3.2/Tools/QtCreator/bin:$PATH"
 
 export ANDROID_HOME=/home/rom/android/sdk
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
