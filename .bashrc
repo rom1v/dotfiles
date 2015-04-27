@@ -118,7 +118,7 @@ PATH="$PATH:/home/$USER/android/sdk/tools"
 PATH="$PATH:/home/$USER/android/sdk/platform-tools"
 PATH="$PATH:/home/$USER/android/ndk"
 PATH="$PATH:/home/$USER/android/ndk/build"
-PATH="$PATH:/home/$USER/Qt5.3.2/5.3/gcc_64/bin"
-PATH="$PATH:/home/$USER/Qt5.3.2/Tools/QtCreator/bin"
+PATH="/home/$USER/Qt5.3.2/5.3/gcc_64/bin:$PATH"
+PATH="/home/$USER/Qt5.3.2/Tools/QtCreator/bin:$PATH"
 
 export ANDROID_HOME=/home/rom/android/sdk
