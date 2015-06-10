@@ -11,7 +11,7 @@ set expandtab
 "set autoindent
 color bvemu "mustang xoria256 bvemu miko fu candyman kkruby jellybeans desert256 blazer busierbee
 set colorcolumn=80 "set cc=80
-highlight ColorColumn ctermbg=235 "234
+highlight ColorColumn ctermbg=236 "234
 
 set listchars=tab:→\ ,trail:~,nbsp:_
 set list
