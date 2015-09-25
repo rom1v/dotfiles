@@ -22,6 +22,7 @@ alias mtpsync='adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED -d 
 alias fixagent='export SSH_AGENT_PID=$(pidof ssh-agent) && export SSH_AUTH_SOCK=$(find /tmp -path "/tmp/ssh-*/agent.$((SSH_AGENT_PID-1))")'
 alias n='ncmpcpp'
 alias dl='youtube-dl'
+alias unadb='adb shell settings put global adb_enabled 0'
 
 # find and open a file in vi
 fvi() {
