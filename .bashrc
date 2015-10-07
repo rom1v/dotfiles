@@ -113,6 +113,7 @@ fi
 
 unset GNOME_KEYRING_CONTROL  # avoid pkcs11 error message on XFCE
 
+PATH="$PATH:/usr/lib/ccache"
 PATH="$PATH:/home/$USER/Documents/bin"
 PATH="$PATH:/home/$USER/android/sdk/tools"
 PATH="$PATH:/home/$USER/android/sdk/platform-tools"
