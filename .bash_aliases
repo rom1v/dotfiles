@@ -24,6 +24,10 @@ alias n='ncmpcpp'
 alias dl='youtube-dl'
 alias unadb='adb shell settings put global adb_enabled 0'
 
+screencap() {
+    adb shell screencap -p | sed 's/\r$//'
+}
+
 # find and open a file in vi
 fvi() {
   find -type f -name "$1" |
