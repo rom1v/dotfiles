@@ -1,6 +1,6 @@
-.PHONY: bash gitbashprompt git vim mutt tmux
+.PHONY: bash gitbashprompt git vim mutt tmux pidcat
 
-all: bash vim git mutt tmux
+all: bash vim git mutt tmux pidcat
 
 bash: gitbashprompt
 	mv -f ~/.bashrc ~/.bashrc.bak || :
@@ -34,3 +34,6 @@ mutt:
 tmux:
 	mv -f ~/.tmux.conf ~/.tmux.conf.bak || :
 	ln -sf $(PWD)/.tmux.conf ~/
+
+pidcat:
+	ln -sf $(PWD)/pidcat/pidcat.py ~/Documents/bin/pidcat
