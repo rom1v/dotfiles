@@ -39,3 +39,11 @@ au FileType make set noet
 " map FSwitch (between .c/.cpp and .h) to \of
 nmap <silent> <Leader>of :FSHere<CR>
 map <silent> <F9> :NERDTree<CR>
+
+" http://vim.wikia.com/wiki/Alternative_tab_navigation
+nnoremap tn :tabnext<CR>
+nnoremap tp :tabprevious<CR>
+nnoremap tc :tabnew<CR>
+nnoremap td :tabclose<CR>
+nnoremap te :tabedit<Space>
+nnoremap tg :tabnext<Space>
