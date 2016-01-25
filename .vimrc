@@ -37,7 +37,7 @@ au FileType make set noet
 "au! Syntax mkd source $VIM/mkd.vim
 
 " map FSwitch (between .c/.cpp and .h) to \of
-nmap <silent> <Leader>of :FSHere<CR>
+nmap <silent> <F4> :FSHere<CR>
 map <silent> <F9> :NERDTree<CR>
 
 " http://vim.wikia.com/wiki/Alternative_tab_navigation
