@@ -21,7 +21,7 @@ alias mtpsync='adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED -d 
 # update ssh-agent env variables
 alias fixagent='export SSH_AGENT_PID=$(pidof ssh-agent) && export SSH_AUTH_SOCK=$(find /tmp -path "/tmp/ssh-*/agent.$((SSH_AGENT_PID-1))")'
 alias n='ncmpcpp'
-alias dl='youtube-dl'
+alias dl='/home/rom/youtube-dl'
 alias unadb='adb shell settings put global adb_enabled 0'
 
 screencap() {
