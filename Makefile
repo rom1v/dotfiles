@@ -35,5 +35,10 @@ tmux:
 	mv -f ~/.tmux.conf ~/.tmux.conf.bak || :
 	ln -sf $(PWD)/.tmux.conf ~/
 
+terminator:
+	mv -f ~/.config/terminator/config ~/.config/terminator/config.bak|| :
+	mkdir -p ~/.config/terminator
+	ln -sf $(PWD)/.terminator_config ~/.config/terminator/config
+
 pidcat:
 	ln -sf $(PWD)/pidcat/pidcat.py ~/Documents/bin/pidcat
