@@ -3,6 +3,7 @@ call pathogen#infect()
 set t_Co=256
 syn on
 set number
+set mouse=a
 "set background=dark
 set tabstop=4
 "set softtabstop=2
