@@ -1,0 +1,7 @@
+[sendemail]
+	smtpEncryption =
+	smtpServer =
+	smtpServerPort =
+	smtpUser =
+	smtpPass =
+	smtpSslCertPath =
