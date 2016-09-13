@@ -119,8 +119,8 @@ PATH="$PATH:/home/$USER/android/sdk/tools"
 PATH="$PATH:/home/$USER/android/sdk/platform-tools"
 PATH="$PATH:/home/$USER/android/ndk"
 PATH="$PATH:/home/$USER/android/ndk/build"
-PATH="/home/$USER/Qt5.4.2/5.4/gcc_64/bin:$PATH"
-PATH="/home/$USER/Qt5.4.2/Tools/QtCreator/bin:$PATH"
+PATH="/home/$USER/Qt5.6.1/5.6/gcc_64/bin:$PATH"
+PATH="/home/$USER/Qt5.6.1/Tools/QtCreator/bin:$PATH"
 
 export ANDROID_HOME=/home/rom/android/sdk
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
