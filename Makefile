@@ -1,6 +1,6 @@
-.PHONY: bash gitbashprompt git vim mutt tmux pidcat
+.PHONY: bash gitbashprompt git tig vim mutt tmux terminator pidcat
 
-all: bash vim git mutt tmux pidcat
+all: bash vim git tig mutt tmux terminator pidcat
 
 bash: gitbashprompt
 	mv -f ~/.bashrc ~/.bashrc.bak || :
@@ -18,6 +18,10 @@ gitbashprompt:
 git:
 	mv -f ~/.gitconfig ~/.gitconfig.bak || :
 	ln -sf $(PWD)/.gitconfig ~/
+
+tig:
+	mv -f ~/.tigrc ~/.tigrc.bak || :
+	ln -s $(PWD)/.tigrc ~/
 
 vim:
 	mv -f ~/.vimrc ~/.vimrc.bak || :
