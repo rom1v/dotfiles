@@ -15,7 +15,7 @@
 	diffc = diff --cached
 	diffh = diff HEAD
 	rma = !git ls-files -z --deleted | xargs -0 git rm
-	rv = log -p --reverse -M #review
+	rv = log -p --stat --reverse -M #review
 	rinit =!git init && git commit --allow-empty -m 'Initial empty commit'
 [include]
 	path = .gitconfig_private
