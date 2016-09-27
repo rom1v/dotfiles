@@ -25,3 +25,6 @@
 [submodule "pidcat"]
 	path = pidcat
 	url = https://github.com/JakeWharton/pidcat.git
+[submodule ".vim/bundle/omnicppcomplete"]
+	path = .vim/bundle/omnicppcomplete
+	url = https://github.com/vim-scripts/omnicppcomplete
