@@ -49,3 +49,19 @@ nnoremap tc :tabnew<CR>
 nnoremap td :tabclose<CR>
 nnoremap te :tabedit<Space>
 nnoremap tg :tabnext<Space>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"Omni-completion par CTRL-X_CTRL-O
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+set nocp
+let OmniCpp_ShowAccess = 0
+let OmniCpp_LocalSearchDecl=1
+let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+set path=.,..,/usr/local/include,/usr/include
+
+map <C-A-S-F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <C-S-F8> :!cscope -bqR<CR>
