@@ -33,7 +33,7 @@ au BufNewFile,BufRead *.c,*.h,*.cpp set ai
 au BufNewFile,BufRead *.qml set syntax=javascript
 "au BufNewFile,BufRead *.md set filetype=mkd tw=80
 au BufNewFile,BufRead *.mail,~/.mutttmp/mutt-* set tw=72 cc=72
-au BufNewFile,BufRead COMMIT_EDITMSG,MERGE_MSG set tw=72 cc=72
+au FileType gitcommit set tw=72 cc=72
 au FileType make set noet
 "au! Syntax mkd source $VIM/mkd.vim
 
