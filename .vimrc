@@ -10,7 +10,8 @@ set tabstop=8
 set shiftwidth=8
 "set expandtab
 "set autoindent
-color bvemu "mustang xoria256 bvemu miko fu candyman kkruby jellybeans desert256 blazer busierbee
+color hybrid "mustang xoria256 bvemu miko fu candyman kkruby jellybeans desert256 blazer busierbee
+set bg=dark
 set colorcolumn=80 "set cc=80
 highlight ColorColumn ctermbg=236 "234
 
