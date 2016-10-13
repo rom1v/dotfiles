@@ -1,4 +1,4 @@
-bind main R !git rebase -i %(commit)
-bind diff R !git rebase -i %(commit)^
+bind main R !git rebase -i %(commit)~
+bind diff R !git rebase -i %(commit)~
 bind diff <Up> scroll-line-up
 bind diff <Down> scroll-line-down
