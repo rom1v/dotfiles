@@ -32,9 +32,10 @@ highlight clear SignColumn
 "au BufNewFile,BufRead *.c,*.h,*.cpp set formatprg=indent\ -linux
 au BufNewFile,BufRead *.c,*.h,*.cpp set ai
 au BufNewFile,BufRead *.qml set syntax=javascript
-"au BufNewFile,BufRead *.md set filetype=mkd tw=80
+au BufNewFile,BufRead *.md set filetype=mkd tw=80
 au BufNewFile,BufRead *.mail,~/.mutttmp/mutt-* set tw=72 cc=72
 au FileType gitcommit set tw=72 cc=72
+au BufNewFile,BufRead ~/Documents/genydeploy/** set et ts=4 sw=4
 au FileType make set noet
 "au! Syntax mkd source $VIM/mkd.vim
 
