@@ -1,6 +1,6 @@
 .PHONY: bash gitbashprompt git tig vim mutt tmux terminator pidcat
 
-all: bash vim git tig mutt tmux terminator pidcat
+all: bash vim git tig mutt tmux terminator pidcat ack
 
 bash: gitbashprompt
 	mv -f ~/.bashrc ~/.bashrc.bak || :
@@ -46,3 +46,7 @@ terminator:
 
 pidcat:
 	ln -sf $(PWD)/pidcat/pidcat.py ~/Documents/bin/pidcat
+
+ack:
+	mv -f ~/.ackrc ~/.ackrc.bak || :
+	ln -sf $(PWD)/.ackrc ~/
