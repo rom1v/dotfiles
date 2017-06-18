@@ -1,6 +1,7 @@
 [user]
 	name = Romain Vimont
 	email = rvimont@genymobile.com
+	signingkey = 644605F3
 [color]
 	ui = true
 [merge]
