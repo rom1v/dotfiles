@@ -5,11 +5,11 @@ syn on
 set number
 set mouse=a
 "set background=dark
-set tabstop=8
+set tabstop=4
 "set softtabstop=2
-set shiftwidth=8
-"set expandtab
-"set autoindent
+set shiftwidth=4
+set expandtab
+set autoindent
 color hybrid "mustang xoria256 bvemu miko fu candyman kkruby jellybeans desert256 blazer busierbee
 set bg=dark
 set colorcolumn=80 "set cc=80
