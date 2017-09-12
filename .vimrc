@@ -45,6 +45,8 @@ nmap <silent> <F4> :FSHere<CR>
 map <silent> <F9> :NERDTree<CR>
 map <silent> <S-F9> :NERDTreeFind<CR>
 nmap <silent> <F8> :TlistToggle<CR>
+nnoremap <F6> :set nopaste<CR>
+nnoremap <F7> :set paste<CR>
 
 " http://vim.wikia.com/wiki/Alternative_tab_navigation
 nnoremap tn :tabnext<CR>
