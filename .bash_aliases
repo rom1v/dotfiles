@@ -6,6 +6,7 @@ r() {
 }
 alias qr='qrencode -t ANSI'
 alias s='ssh -t serv "tmux -2 attach || tmux -2"'
+alias sf='ssh -t self "tmux -2 attach || tmux -2"'
 alias h='ssh -t ovh "tmux -2 attach || tmux -2"'
 alias d='ssh -t dolphin "tmux -2 attach || tmux -2"'
 alias sa='ssh-add ~/.ssh/id_{ed25519,rsa,ecdsa,rom_genymobile}'
