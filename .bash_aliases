@@ -25,6 +25,7 @@ alias fixagent='export SSH_AGENT_PID=$(pidof ssh-agent) && export SSH_AUTH_SOCK=
 alias n='ncmpcpp'
 alias dl='/home/rom/youtube-dl'
 alias unadb='adb shell settings put global adb_enabled 0'
+alias timestamp='ts "[%Y-%m-%d %H:%M:%.S]"'
 
 screencap() {
     adb shell screencap -p | sed 's/\r$//'
