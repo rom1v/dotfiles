@@ -6,6 +6,7 @@ r() {
 }
 alias qr='qrencode -t ANSI'
 alias s='ssh -t serv "tmux -2 attach || tmux -2"'
+alias sf='ssh -t self "tmux -2 attach || tmux -2"'
 alias h='ssh -t ovh "tmux -2 attach || tmux -2"'
 alias d='ssh -t dolphin "tmux -2 attach || tmux -2"'
 alias sa='ssh-add ~/.ssh/id_{ed25519,rsa,ecdsa,rom_genymobile}'
@@ -24,6 +25,7 @@ alias fixagent='export SSH_AGENT_PID=$(pidof ssh-agent) && export SSH_AUTH_SOCK=
 alias n='ncmpcpp'
 alias dl='/home/rom/youtube-dl'
 alias unadb='adb shell settings put global adb_enabled 0'
+alias timestamp='ts "[%Y-%m-%d %H:%M:%.S]"'
 
 screencap() {
     adb shell screencap -p | sed 's/\r$//'
