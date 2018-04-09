@@ -1,6 +1,6 @@
 .PHONY: bash gitbashprompt git tig vim mutt tmux terminator pidcat
 
-all: bash vim git tig mutt tmux terminator pidcat ack
+all: bash vim git tig mutt tmux terminator pidcat ack rg
 
 bash: gitbashprompt
 	mv -f ~/.bashrc ~/.bashrc.bak || :
@@ -50,3 +50,7 @@ pidcat:
 ack:
 	mv -f ~/.ackrc ~/.ackrc.bak || :
 	ln -sf $(PWD)/.ackrc ~/
+
+rg:
+	mv -f ~/.rgignore ~/.rgignore.bak || :
+	ln -sf $(PWD)/.rgignore ~/
