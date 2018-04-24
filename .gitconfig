@@ -18,5 +18,6 @@
 	rv = log -p --stat --reverse -M #review
 	rinit =!git init && git commit --allow-empty -m 'Initial empty commit'
 	git = !git
+	co = checkout
 [include]
 	path = .gitconfig_private

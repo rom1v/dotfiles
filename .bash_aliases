@@ -5,7 +5,7 @@ r() {
     xdg-open "$uri"
 }
 alias qr='qrencode -t ANSI'
-alias s='ssh -t serv "tmux -2 attach || tmux -2"'
+alias s=sha256sum
 alias sf='ssh -t self "tmux -2 attach || tmux -2"'
 alias h='ssh -t ovh "tmux -2 attach || tmux -2"'
 alias d='ssh -t dolphin "tmux -2 attach || tmux -2"'
@@ -28,7 +28,7 @@ alias unadb='adb shell settings put global adb_enabled 0'
 alias timestamp='ts "[%Y-%m-%d %H:%M:%.S]"'
 
 screencap() {
-    adb shell screencap -p | sed 's/\r$//'
+    adb exec-out screencap -p
 }
 
 # find and open a file in vi
