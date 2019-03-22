@@ -1,23 +1,28 @@
 [user]
-	name = Romain Vimont
-	email = rom@rom1v.com
+    name = Romain Vimont
+    email = rom@rom1v.com
 [color]
-	ui = true
+    ui = true
 [merge]
-	tool = vimdiff
-	conflictstyle = diff3
+    tool = vimdiff
+    conflictstyle = diff3
 [mergetool]
-	prompt = false
+    prompt = false
 [rebase]
     autosquash = true
 [alias]
-	lg = log --oneline --graph --decorate
-	diffc = diff --cached
-	diffh = diff HEAD
-	rma = !git ls-files -z --deleted | xargs -0 git rm
-	rv = log -p --stat --reverse -M #review
-	rinit =!git init && git commit --allow-empty -m 'Initial empty commit'
-	git = !git
-	co = checkout
+    lg = log --oneline --graph --decorate
+    diffc = diff --cached
+    diffh = diff HEAD
+    rma = !git ls-files -z --deleted | xargs -0 git rm
+    rv = log -p --stat --reverse -M #review
+    rinit =!git init && git commit --allow-empty -m 'Initial empty commit'
+    git = !git
+    co = checkout
+    cp = cherry-pick
+    v = rev-list HEAD -1
+    copr = "!f() { git fetch $1 pull/$2/head && git checkout FETCH_HEAD; }; f"
 [include]
-	path = .gitconfig_private
+    path = .gitconfig_private
+[url "git@github.com:"]
+    insteadOf = gh:
