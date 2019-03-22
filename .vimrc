@@ -1,4 +1,5 @@
 call pathogen#infect()
+"filetype plugin on
 
 set t_Co=256
 syn on
@@ -10,10 +11,15 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
-color hybrid "mustang xoria256 bvemu miko fu candyman kkruby jellybeans desert256 blazer busierbee
+"color hybrid
+color jellybeans "hybrid mustang xoria256 bvemu miko fu candyman kkruby jellybeans desert256 blazer busierbee
+if &diff | colors hybrid | endif
 set bg=dark
 set colorcolumn=80 "set cc=80
 highlight ColorColumn ctermbg=236 "234
+
+set undofile
+set undodir=~/.cache/vim
 
 set listchars=tab:>-,trail:~,nbsp:_
 set list
@@ -37,7 +43,10 @@ au BufNewFile,BufRead *.yaml set filetype=mkd tw=76 et ts=4 sw=4
 au BufNewFile,BufRead *.mail,~/.mutttmp/mutt-* set tw=72 cc=72
 au FileType gitcommit set tw=72 cc=72
 au BufNewFile,BufRead ~/Documents/genydeploy/** set et ts=4 sw=4
+au BufNewFile,BufRead ~/projects/rav1e/*.rs set et ts=2 sw=2
 au FileType make set noet
+autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
+autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "& >2 /dev/null" | redraw!
 "au! Syntax mkd source $VIM/mkd.vim
 
 " map FSwitch (between .c/.cpp and .h) to \of
@@ -59,15 +68,19 @@ nnoremap tg :tabnext<Space>
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Omni-completion par CTRL-X_CTRL-O
 """""""""""""""""""""""""""""""""""""""""""""""""""
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete
-set nocp
-let OmniCpp_ShowAccess = 0
-let OmniCpp_LocalSearchDecl=1
-let OmniCpp_MayCompleteDot = 1 " autocomplete after .
-let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
-let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+"filetype plugin on
+"set omnifunc=syntaxcomplete#Complete
+"set nocp
+"let OmniCpp_ShowAccess = 0
+"let OmniCpp_LocalSearchDecl=1
+"let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+"let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+"let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
 set path=.,..,/usr/local/include,/usr/include
 
 map <C-A-S-F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 map <C-S-F8> :!cscope -bqR<CR>
+
+imap jj <Esc>
+nnoremap <PageUp> <Nop>
+nnoremap <PageDown> <Nop>
