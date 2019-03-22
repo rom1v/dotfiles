@@ -4,28 +4,25 @@ r() {
     [[ "$1" ]] && uri="$uri?body=$1"
     xdg-open "$uri"
 }
+alias g=git
 alias qr='qrencode -t ANSI'
 alias s=sha256sum
 alias sf='ssh -t self "tmux -2 attach || tmux -2"'
 alias h='ssh -t ovh "tmux -2 attach || tmux -2"'
-alias d='ssh -t dolphin "tmux -2 attach || tmux -2"'
-alias sa='ssh-add ~/.ssh/id_{ed25519,rsa,ecdsa,rom_genymobile}'
+alias sa='ssh-add ~/.ssh/id_ed25519 ~/.ssh/id_ecdsa'
 alias fr='setxkbmap fr oss'
 alias u='sudo apt update && sudo apt upgrade'
-#alias httpserv='python -m SimpleHTTPServer 4242'
 alias httpserv='python3 -m http.server 4242'
-alias pj='python -mjson.tool'
 alias t='adb shell input text'
 alias tab='adb shell input keyevent 61'
 alias v='git rev-list HEAD -1'
 alias tmux='/usr/bin/tmux -2'
 alias mtpsync='adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED -d file:///mnt/sdcard'
-# update ssh-agent env variables
-alias fixagent='export SSH_AGENT_PID=$(pidof ssh-agent) && export SSH_AUTH_SOCK=$(find /tmp -path "/tmp/ssh-*/agent.$((SSH_AGENT_PID-1))")'
-alias n='ncmpcpp'
-alias dl='/home/rom/youtube-dl'
+alias dl='youtube-dl'
 alias unadb='adb shell settings put global adb_enabled 0'
 alias timestamp='ts "[%Y-%m-%d %H:%M:%.S]"'
+alias urldecode='python -c "import sys, urllib; print urllib.unquote_plus(sys.argv[1])"'
+alias urlencode='python -c "import sys, urllib; print urllib.quote_plus(sys.argv[1])"'
 
 screencap() {
     adb exec-out screencap -p
