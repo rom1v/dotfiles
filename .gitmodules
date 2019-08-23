@@ -1,33 +1,24 @@
 [submodule "gitbashprompt"]
 	path = gitbashprompt
 	url = http://git.rom1v.com/gitbashprompt.git
-[submodule ".vim/bundle/vim-colorschemes"]
-	path = .vim/bundle/vim-colorschemes
+[submodule ".vim/pack/plugins/start/vim-colorschemes"]
+	path = .vim/pack/plugins/start/vim-colorschemes
 	url = https://github.com/dgvigil/vim-colorschemes.git
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
+[submodule ".vim/pack/plugins/start/nerdtree"]
+	path = .vim/pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule ".vim/vim-pathogen"]
-	path = .vim/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
-[submodule ".vim/bundle/vim-gitgutter"]
-	path = .vim/bundle/vim-gitgutter
+[submodule ".vim/pack/plugins/start/vim-gitgutter"]
+	path = .vim/pack/plugins/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule ".vim/bundle/ctrlp.vim"]
-	path = .vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule ".vim/bundle/vim-fswitch"]
-	path = .vim/bundle/vim-fswitch
+[submodule ".vim/pack/plugins/start/vim-fswitch"]
+	path = .vim/pack/plugins/start/vim-fswitch
 	url = https://github.com/derekwyatt/vim-fswitch.git
-[submodule ".vim/bundle/vim-fugitive"]
-	path = .vim/bundle/vim-fugitive
+[submodule ".vim/pack/plugins/start/vim-fugitive"]
+	path = .vim/pack/plugins/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "pidcat"]
-	path = pidcat
-	url = https://github.com/JakeWharton/pidcat.git
-[submodule ".vim/bundle/omnicppcomplete"]
-	path = .vim/bundle/omnicppcomplete
-	url = https://github.com/vim-scripts/omnicppcomplete
-[submodule ".vim/bundle/rust.vim"]
-	path = .vim/bundle/rust.vim
-	url = https://github.com/rust-lang/rust.vim.git
+[submodule ".vim/pack/plugins/start/ctrlp.vim"]
+	path = .vim/pack/plugins/start/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule ".vim/pack/plugins/start/fzf.vim"]
+	path = .vim/pack/plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim

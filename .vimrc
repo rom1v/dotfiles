@@ -1,4 +1,3 @@
-call pathogen#infect()
 "filetype plugin on
 
 set t_Co=256
@@ -42,7 +41,6 @@ au BufNewFile,BufRead *.md set filetype=mkd tw=80 et ts=4 sw=4
 au BufNewFile,BufRead *.yaml set filetype=mkd tw=76 et ts=4 sw=4
 au BufNewFile,BufRead *.mail,~/.mutttmp/mutt-* set tw=72 cc=72
 au FileType gitcommit set tw=72 cc=72
-au BufNewFile,BufRead ~/Documents/genydeploy/** set et ts=4 sw=4
 au BufNewFile,BufRead ~/projects/rav1e/*.rs set et ts=2 sw=2
 au FileType make set noet
 autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
@@ -80,6 +78,8 @@ set path=.,..,/usr/local/include,/usr/include
 
 map <C-A-S-F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 map <C-S-F8> :!cscope -bqR<CR>
+
+"set rtp+=/usr/bin/fzf
 
 imap jj <Esc>
 nnoremap <PageUp> <Nop>
