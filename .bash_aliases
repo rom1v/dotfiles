@@ -5,10 +5,11 @@ r() {
     xdg-open "$uri"
 }
 alias g=git
+alias c='cargo c'
 alias qr='qrencode -t ANSI'
-alias s=sha256sum
+alias h=sha256sum
 alias sf='ssh -t self "tmux -2 attach || tmux -2"'
-alias h='ssh -t ovh "tmux -2 attach || tmux -2"'
+#alias h='ssh -t ovh "tmux -2 attach || tmux -2"'
 alias sa='ssh-add ~/.ssh/id_ed25519 ~/.ssh/id_ecdsa'
 alias fr='setxkbmap fr oss'
 alias u='sudo apt update && sudo apt upgrade'
@@ -38,4 +39,4 @@ fvi() {
 }
 
 # bash aliases not to be shared by different hosts
-[[ -e ~/.bash_aliases_custom ]] && . ~/.bash_aliases_custom
+# [[ -e ~/.bash_aliases_custom ]] && . ~/.bash_aliases_custom

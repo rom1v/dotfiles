@@ -1,14 +1,14 @@
-set locale=`echo "${LC_ALL:-${LC_TIME:-${LANG}}}"`
-set date_format="%A %e %B %Y à %k:%M %Z"
-set attribution="\n\nLe %d, %n a écrit :"
+#set locale=`echo "${LC_ALL:-${LC_TIME:-${LANG}}}"`
+#set date_format="%A %e %B %Y à %k:%M %Z"
+#set attribution="\n\nLe %d, %n a écrit :"
 
 set from='Romain Vimont <rom@rom1v.com>'
-set folder=imap://imap.rom1v.com
+set folder=imaps://imap.rom1v.com
 set spoolfile=+INBOX
 set postponed=+Drafts
 set record=+Sent
 
-source ~/.muttrc_private
+source ~/.muttrc_private.rom
 #set imap_user=***USER***
 #set imap_pass=***PASSWORD***
 #set smtp_url=smtp://***USER***@smtp.rom1v.com
@@ -20,5 +20,5 @@ set ssl_force_tls=yes
 set send_charset=us-ascii:utf-8
 set sort=reverse-date
 set pager_stop=yes
-set header_cache=~/.hcache
-set tmpdir=~/.mutttmp
+set header_cache=~/.hcache.rom
+set tmpdir=~/.mutttmp.rom

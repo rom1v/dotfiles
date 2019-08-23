@@ -12,7 +12,11 @@
     autosquash = true
 [alias]
     lg = log --oneline --graph --decorate
+    c = commit
+    d = diff
+    dc = diff --cached
     diffc = diff --cached
+    dh = diff HEAD
     diffh = diff HEAD
     rma = !git ls-files -z --deleted | xargs -0 git rm
     rv = log -p --stat --reverse -M #review
@@ -20,7 +24,14 @@
     git = !git
     co = checkout
     cp = cherry-pick
+    r = rebase
+    rc = rebase --continue
+    ri = rebase -i
+    st = status
+    s = show
+    sw = switch
     v = rev-list HEAD -1
+    mt = mergetool
     copr = "!f() { git fetch $1 pull/$2/head && git checkout FETCH_HEAD; }; f"
 [include]
     path = .gitconfig_private

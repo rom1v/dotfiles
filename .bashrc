@@ -72,7 +72,7 @@ esac
 #    ;;
 #esac
 
-. ~/gitbashprompt '38;5;226'
+. ~/gitbashprompt '38;5;208'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -122,3 +122,9 @@ PATH="$PATH:/home/$USER/android/sdk/tools"
 PATH="$PATH:/home/$USER/android/sdk/platform-tools"
 PATH="$PATH:/home/$USER/android/ndk"
 PATH="$PATH:/home/$USER/android/ndk/build"
+PATH="$PATH:/home/$USER/android/sdk/build-tools/27.0.3"
+PATH="$PATH:/home/$USER/.cargo/bin"
+
+export ANDROID_HOME=/home/rom/android/sdk
+export USE_CCACHE=1
+export CCACHE_DIR=/home/rom/.ccache

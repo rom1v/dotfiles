@@ -22,3 +22,7 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:/home/$USER/android/sdk/tools"
+export PATH="$PATH:/home/$USER/android/sdk/platform-tools"
